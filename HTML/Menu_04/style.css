@@ -1,0 +1,57 @@
+body, html {
+  height: 100%;
+}
+.main_menu{
+  width: 100%;
+  background: #f1f1f1;
+  text-align: center;
+}
+
+.main_menu ul{
+  display: inline-block;
+  list-style-type: none;
+  padding: 0px;
+}
+
+.main_menu li{
+  float: left;
+  margin-right: 30px;
+}
+
+.main_menu li a {
+  font-size: 20pt;
+  text-decoration: none;
+  padding: 8px 16px;
+}
+
+.main_menu ul a:hover{
+  background: #4CAF50;
+  color: white;
+}
+
+
+
+.main_menu_vertical{
+  width: 25%;
+  background: #f1f1f1;
+  text-align: center;
+  position: fixed;
+}
+
+.main_menu_vertical ul{
+  list-style-type: none;
+}
+
+
+.main_menu_vertical li a {
+  font-size: 20pt;
+  text-decoration: none;
+  display: block;
+  padding: 8px 16px;
+  
+}
+
+.main_menu_vertical ul a:hover{
+  background: #4CAF50;
+  color: white;
+}

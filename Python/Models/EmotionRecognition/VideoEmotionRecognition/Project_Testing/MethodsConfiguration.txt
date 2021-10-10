@@ -1,0 +1,5 @@
+NN_1;Model 1;
+NN_2;Model 2;
+CNN_1;Model 3;CNN_1.txt
+CNN_2;Model 4;
+CNN_3;Model 5;

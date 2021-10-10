@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="rss reader,feed reader, google reader, news reader">
+	<meta name="description" content="Read your favorite Blogs, News Websites, Youtube Channels, Podcasts, Magazines, RSS feeds and Social Sites accounts from one place on Feedspot.">								
+<title>Feedspot - Read All Your Favorite Websites in one place</title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+
+</head>		
+<body>
+<div class="container">
+
+<nav aria-label="breadcrumb">
+  <ol class="breadcrumb">
+    <li class="breadcrumb-item"><a href="home.html">Головна</a></li>
+    <li class="breadcrumb-item active" aria-current="page">Новини</li>
+  </ol>
+</nav>
+<div class="btn-group" role="group" aria-label="Basic example">
+  <button type="button" class="btn btn-light"><a href="home.html">Головна</a></button>
+  <button type="button" class="btn btn-light"><a href="news.html">Новини IT</a></button>
+  <button type="button" class="btn btn-light"><a href="job.html">Робота</a></button>
+  <button type="button" class="btn btn-light"><a href="event.html">Події і курси</a></button>
+  <button type="button" class="btn btn-light"><a href="contact.html">Контакти</a></button>
+</div>
+    <p>Дана сторінка містить останні новини із IT-індустрії впорядковані за датою або популярністю і може виглядати приблизно наступним чином: </p>
+    <p id="top">Головні новини IT індустрії</p>
+    <p class="intro"><a href="https://www.ukr.net/ua/news/tehnologii.html">Новини із ukr.net</a></p>
+    
+
+<div id="accordion">
+  <div class="card">
+    <div class="card-header" id="headingOne">
+      <h5 class="mb-0">
+        <button class="btn btn-link" data-toggle="collapse" data-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          <p>10 кращих хмарних сервісів для зберігання і синхронізації даних в 2020 році (Root Nation)</p>
+        </button>
+      </h5>
+    </div>
+
+    <div id="collapseOne" class="collapse show" aria-labelledby="headingOne" data-parent="#accordion">
+      <div class="card-body">
+        Сучасні хмарні сервіси допомагають зберігати гігабайти фотографій, документів, файлів і інших даних. Ми зібрали в одній статті кращі з подібних сховищ. Незважаючи на те, що у них є спільні риси, кожен сервіс по своєму унікальний, має оригінальні фішки, переваги і недоліки, а також платні і безкоштовні версії.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingTwo">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          <p>Samsung презентував штучне сонце, що завжди світитиме у вашому вікні (BitukMedia)</p>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseTwo" class="collapse" aria-labelledby="headingTwo" data-parent="#accordion">
+      <div class="card-body">
+        Компанія Samsung підтримала стартап SunnyFive: його розробники створили вікно, яке імітує сонячне освітлення.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingThree">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          <p>Xiaomi випустить першу металеву розумну колонку (Portaltele.com.ua)</p>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseThree" class="collapse" aria-labelledby="headingThree" data-parent="#accordion">
+      <div class="card-body">
+        Компанія Xiaomi офіційно підтвердила, що її нова розумна колонка отримає металевий корпус. За кілька років компанія Xiaomi випустила кілька розумних колонок, проте всі вони до цього оснащувалися пластиковими корпусами. Xiaomi неодноразово говорила про свій намір перейти в преміальну категорію пристроїв. Для цього Redmi і Poco були виділені в самостійні бренди. Нещодавно в Китаї був представлений розумний динамік Redmi XiaoAI Speaker Play, який коштує всього близько 11 доларів.
+      </div>
+    </div>
+  </div>
+  <div class="card">
+    <div class="card-header" id="headingFour">
+      <h5 class="mb-0">
+        <button class="btn btn-link collapsed" data-toggle="collapse" data-target="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          <p>Facebook запустила бесплатный сервис для создания магазинов в своих соцсетях (Фокус)</p>
+        </button>
+      </h5>
+    </div>
+    <div id="collapseFour" class="collapse" aria-labelledby="headingFour" data-parent="#accordion">
+      <div class="card-body">
+        Компания Facebook объявила о запуске сервиса Facebook Shops. Сообщается, что он создан для помощи малому бизнесу, пострадавшему от пандемии коронавируса.
+      </div>
+    </div>
+  </div>
+</div>
+
+</div>
+</body>
+	
+</html>
+

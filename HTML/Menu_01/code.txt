@@ -1,0 +1,244 @@
+home.html
+
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="rss reader,feed reader, google reader, news reader">
+	<meta name="description" content="Read your favorite Blogs, News Websites, Youtube Channels, Podcasts, Magazines, RSS feeds and Social Sites accounts from one place on Feedspot.">								
+<title>Feedspot - Read All Your Favorite Websites in one place</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>		
+<body>
+<div class="container">
+<ul>
+  <li><a href="home.html">Головна</a></li>
+  <li><a href="news.html">Новини IT</a></li>
+  <li><a href="job.html">Роботи</a></li>
+  <li><a href="event.html">Події і курси</a></li>
+  <li><a href="contact.html">Контакти</a></li>
+</ul>
+
+<p>Головна сторінка повинна містити запрошення користувача прочитати блог</p>
+<p>Вона може містити жарти на IT-тематику та список із найбільш популярними новинами, вакансіями, статтями</p>
+</div>
+</body>
+	
+</html>
+
+
+news.html
+
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="rss reader,feed reader, google reader, news reader">
+	<meta name="description" content="Read your favorite Blogs, News Websites, Youtube Channels, Podcasts, Magazines, RSS feeds and Social Sites accounts from one place on Feedspot.">								
+<title>Feedspot - Read All Your Favorite Websites in one place</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>		
+<body>
+<div class="container">
+<ul>
+  <li><a href="home.html">Головна</a></li>
+  <li><a href="news.html">Новини IT</a></li>
+  <li><a href="job.html">Роботи</a></li>
+  <li><a href="event.html">Події і курси</a></li>
+  <li><a href="contact.html">Контакти</a></li>
+</ul>
+    <p>Дана сторінка містить останні новини із IT-індустрії впорядковані за датою або популярністю і може виглядати приблизно наступним чином: </p>
+    <p id="top">Головні новини IT індустрії</p>
+    <p class="intro">Новини із ukr.net</p>
+    <p>10 кращих хмарних сервісів для зберігання і синхронізації даних в 2020 році (Root Nation)</p>
+    <p>Samsung презентував штучне сонце, що завжди світитиме у вашому вікні (BitukMedia)</p>
+    <p>Xiaomi випустить першу металеву розумну колонку (Portaltele.com.ua)</p>
+    <p>Facebook запустила бесплатный сервис для создания магазинов в своих соцсетях (Фокус)</p>
+</div>
+</body>
+	
+</html>
+
+job.html
+
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="rss reader,feed reader, google reader, news reader">
+	<meta name="description" content="Read your favorite Blogs, News Websites, Youtube Channels, Podcasts, Magazines, RSS feeds and Social Sites accounts from one place on Feedspot.">								
+<title>Feedspot - Read All Your Favorite Websites in one place</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<script>
+function myFunction(imgs) {
+  // Get the expanded image
+  var expandImg = document.getElementById("expandedImg");
+  // Get the image text
+  //var imgText = document.getElementById("imgtext");
+  // Use the same src in the expanded image as the image being clicked on from the grid
+  expandImg.src = imgs.src;
+  // Use the value of the alt attribute of the clickable image as text inside the expanded image
+  imgText.innerHTML = imgs.alt;
+  // Show the container element (hidden with CSS)
+  expandImg.parentElement.style.display = "block";
+}
+</script>
+
+</head>		
+<body>
+<ul>
+  <li><a href="home.html">Головна</a></li>
+  <li><a href="news.html">Новини IT</a></li>
+  <li><a href="job.html">Роботи</a></li>
+  <li><a href="event.html">Події і курси</a></li>
+  <li><a href="contact.html">Контакти</a></li>
+</ul>
+
+<ul>
+  <li><a href="images/developer.jpg">Розробник</a></li>
+  <li><a href="images/business-analyst.png">Бізнес-аналітик</a></li>
+  <li><a href="images/project-manager.jpg">Керівник проекта</a></li>
+  <li><a href="images/scrum-master.png">Скрам-мастер</a></li>
+</ul>
+
+<p>Містить галерею із популярними професіями в IT, які далі можна було би вибрати та почитати статтю про них</p>
+
+<div class="row">
+    <img src="images/developer.jpg" alt="Developer" onclick="myFunction(this);"/>
+    <img src="images/business-analyst.png" alt="Business Analyst" onclick="myFunction(this);">
+    <img src="images/project-manager.jpg" alt="Project Manager" onclick="myFunction(this);">
+    <img src="images/scrum-master.png" alt="Scrum Master" onclick="myFunction(this);">
+</div>
+
+<!-- The expanding image container -->
+<div class="container">
+  <!-- Close the image -->
+  <span onclick="this.parentElement.style.display='none'" class="closebtn">&times;</span>
+
+  <!-- Expanded image -->
+  <img id="expandedImg" style="width:100%">
+
+  <!-- Image text -->
+  <div id="imgtext"></div>
+</div>
+
+</body>
+	
+</html>
+
+
+event.html
+
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="rss reader,feed reader, google reader, news reader">
+	<meta name="description" content="Read your favorite Blogs, News Websites, Youtube Channels, Podcasts, Magazines, RSS feeds and Social Sites accounts from one place on Feedspot.">								
+<title>Feedspot - Read All Your Favorite Websites in one place</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>		
+<body>
+<div class="container">
+<ul>
+  <li><a href="home.html">Головна</a></li>
+  <li><a href="news.html">Новини IT</a></li>
+  <li><a href="job.html">Роботи</a></li>
+  <li><a href="event.html">Події і курси</a></li>
+  <li><a href="contact.html">Контакти</a></li>
+</ul>
+
+<p>Дана сторінка може містити список останніх або майбутніх IT-подій</p>
+<p>Наприклад як на сайті: <a href="https://dou.ua/calendar/">Dou</a></p>
+</div>
+</body>
+	
+</html>
+
+
+contact.html
+
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8">
+	<meta name="keywords" content="rss reader,feed reader, google reader, news reader">
+	<meta name="description" content="Read your favorite Blogs, News Websites, Youtube Channels, Podcasts, Magazines, RSS feeds and Social Sites accounts from one place on Feedspot.">								
+<title>Feedspot - Read All Your Favorite Websites in one place</title>
+<link rel="stylesheet" type="text/css" href="style.css">
+</head>		
+<body>
+<div class="container">
+<ul>
+  <li><a href="home.html">Головна</a></li>
+  <li><a href="news.html">Новини IT</a></li>
+  <li><a href="job.html">Роботи</a></li>
+  <li><a href="event.html">Події і курси</a></li>
+  <li><a href="contact.html">Контакти</a></li>
+</ul>
+    <p>Дана сторінка містить контактну інформацію про нас, телефон, email і наприклад виглядає так:</p>
+<p> Email: xxx@gmail.com</p>
+<p> Phone: +380234232332</p>
+<p>Також дана сторінка може містити форму, де користувач може ввести власну пошту та написати листа у підтримку сайта у разі виникнення питань/p>
+</div>
+</body>
+	
+</html>
+
+
+style.css
+
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  display: inline;
+}
+.row {
+  height: 200px;
+}
+
+img{
+  height: 100%;
+  width: auto;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+p{
+ color: DarkSlateGray;
+ font-family: 'Times New Roman', Times, serif; /* Шрифт с засечками */
+ font-style: italic; /* Курсивное начертание */
+}
+#top {
+  background-color: #ccc;
+  padding: 20px
+}
+.intro {
+  color: black;
+  font-family: 'Arial';
+  font-weight: bold;
+  font-style: normal;
+}
+
+
+

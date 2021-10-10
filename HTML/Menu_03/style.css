@@ -1,0 +1,42 @@
+.rowgall {
+  height: 200px;
+}
+
+img{
+  height: 100%;
+  width: auto;
+}
+/* unvisited link */
+a:link {
+  color: red;
+}
+
+/* visited link */
+a:visited {
+  color: green;
+}
+
+/* mouse over link */
+a:hover {
+  color: hotpink;
+}
+
+/* selected link */
+a:active {
+  color: blue;
+}
+p{
+ color: DarkSlateGray;
+ font-family: 'Times New Roman', Times, serif; /* Шрифт с засечками */
+ font-style: italic; /* Курсивное начертание */
+}
+#top {
+  background-color: #ccc;
+  padding: 20px
+}
+.intro {
+  color: black;
+  font-family: 'Arial';
+  font-weight: bold;
+  font-style: normal;
+}

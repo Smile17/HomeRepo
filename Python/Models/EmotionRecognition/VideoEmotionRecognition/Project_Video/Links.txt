@@ -1,0 +1,10 @@
+Code sample with dlib: https://www.codesofinterest.com/2016/10/getting-dlib-face-landmark-detection.html
+http://dlib.net/face_landmark_detection.py.html
+Use virtual env: https://www.learnopencv.com/install-opencv-3-and-dlib-on-windows-python-only/
+Dlib Git Hub: https://github.com/davisking/dlib/tree/master/examples
+Dlib officail: http://dlib.net/compile.html
+Install Python packages: https://packaging.python.org/tutorials/installing-packages/
+Command: python -m pip install [Package name]
+How to install dlib: https://medium.com/@vinuvish/install-dlib-python-windows-77e9349e6cfc
+DataBase: https://smartlaboratory.org/ravdess/
+https://zenodo.org/record/1188976

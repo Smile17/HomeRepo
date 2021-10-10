@@ -1,0 +1,39 @@
+# Git setup
+# Git pretty format
+git config --global alias.lg "log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit"
+git config --global alias.grog 'log --graph --abbrev-commit --decorate --all 
+--format=format:"%C(bold blue)%h%C(reset) - %C(bold cyan)%aD%C(dim white) - %an%C(reset) %C(bold green)(%ar)%C(reset)%C(bold yellow)%d%C(reset)%n %C(white)%s%C(reset)"'
+# https://tproger.ru/translations/git-aliases/
+
+# Git add forgotten file
+git config --global alias.commend 'commit --amend --no-edit'
+Приклад: 
+$ git add Dockerfile
+$ git commit -m ‘Update Bitbucket pipeline with new Docker image’
+# (facepalm)
+$ git add bitbucket-pipelines.yml
+$ git commend
+
+# Git status alias
+git config --global alias.st "status -s"
+
+# Git SSH key
+Follow steps at the link: https://www.rithmschool.com/courses/git/git-github-ssh-keys
+If you get message: Hi *****! You've successfully authenticated, but GitHub does not provide shell access. ->
+
+Скорей всего у вас origin ведет на https, такое может быть, если вы проект клонили через
+git clone https://github.com/somerepo
+а не через
+git clone git@github.com:somerepo
+Проверьте через
+git remote -v
+Сменить можно через
+git remote set-url origin git@github.com:somerepo
+
+https://qna.habr.com/q/560765
+
+або можна зразу скачати замість 1 команди запустити 2-гу
+git clone https://github.com/Smile17/test2.git
+git clone git@github.com:Smile17/test2
+
+

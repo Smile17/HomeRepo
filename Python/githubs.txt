@@ -1,0 +1,8 @@
+Pandas Exercises - https://github.com/guipsamora/pandas_exercises
+ML snippets Microsoft - https://github.com/MicrosoftDocs/ml-basics
+DP-100 Labs - https://github.com/MicrosoftLearning/mslearn-dp100
+
+Statistics
+https://github.com/rouseguy/intro2stats
+https://github.com/Probability-Statistics-Jupyter-Notebook/probability-statistics-notebook
+https://github.com/tirthajyoti/Stats-Maths-with-Python/blob/master/README.md

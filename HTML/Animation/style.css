@@ -1,0 +1,28 @@
+body {
+  width: 100%;
+}
+.container{
+  width: 100%;
+}
+
+.header_letter{
+  display: table-cell;
+  vertical-align: middle;
+  width: 80px;
+  height: 80px;
+  font-size: 48pt;
+  text-align: center;
+  border-radius: 50%;
+  position: relative;
+  background: #4CAF50;
+
+  animation: rolling_down 3s forwards;
+}
+
+
+@keyframes rolling_down {
+  to 
+  {background-color: blue;
+   transform: translateY(500%) rotate(720deg);
+  }
+}

@@ -1,0 +1,9 @@
+Emotion Id;Emotion Name;Emotion Contraction
+0;angry;AN;
+1;calm;CA;
+2;disgust;DI;
+3;fearful;FE;
+4;happy;HA;
+5;neutral;NE;
+6;sad;SA;
+7;surprised;SU;

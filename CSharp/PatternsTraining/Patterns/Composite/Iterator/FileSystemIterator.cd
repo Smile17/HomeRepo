@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="Patterns.File">
+    <Position X="2" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAgAAAAAAQAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Composite\File.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Patterns.Folder">
+    <Position X="4.25" Y="2.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAgAAAAAAQAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Composite\Folder.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Patterns.FolderDepthIterator">
+    <Position X="6.25" Y="2.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAQAAAAAAACAAAAAgAAQAAIAAAAABAAABAA=</HashCode>
+      <FileName>Composite\Iterator\FolderDepthIterator.cs</FileName>
+    </TypeIdentifier>
+    <Lollipop Position="0.2" />
+  </Class>
+  <Class Name="Patterns.FileSystemIteratorDemo">
+    <Position X="1" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Composite\Iterator\FileSystemIteratorDemo.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Interface Name="Patterns.IFileSystemObject">
+    <Position X="3.5" Y="0.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAgAAAAAAQAAAAAAAAAAAAAAAEAAAA=</HashCode>
+      <FileName>Composite\IFileSystemObject.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="Patterns.IFileSystemObjectIterator">
+    <Position X="7" Y="0.75" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAACAAAAAAAAQAAIAAAAAAAAAAAA=</HashCode>
+      <FileName>Composite\Iterator\IFileSystemObjectIterator.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>

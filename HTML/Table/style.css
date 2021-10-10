@@ -1,0 +1,48 @@
+body {
+  width: 100%;
+}
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+
+img{
+  height: 200px;
+  width: auto;
+}
+
+.moving {
+    position: absolute;
+    white-space: nowrap;
+    animation: rightThenLeft 15s linear infinite;
+}
+
+@keyframes rightThenLeft {
+  0%   {left:20%;}
+  50%  {left:80%;}
+  100%  {left:20%;}
+}
+
+.text_red {
+  background-color: red;
+}
+.text_blue {
+  background-color: blue;
+}

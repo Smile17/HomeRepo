@@ -1,0 +1,128 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{71C0A7FE-030B-4A92-83D9-CD99F79CEDC5}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>Patterns</RootNamespace>
+    <AssemblyName>Patterns</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Builder\Car.cs" />
+    <Compile Include="Builder\CarBuilder.cs" />
+    <Compile Include="Builder\CarDirector.cs" />
+    <Compile Include="Builder\ICarBuilder.cs" />
+    <Compile Include="Builder\CarBuilderDemo.cs" />
+    <Compile Include="FactoryMethod\ICreator.cs" />
+    <Compile Include="FactoryMethod\IItem.cs" />
+    <Compile Include="FactoryMethod\LinuxButton.cs" />
+    <Compile Include="FactoryMethod\LinuxDialog.cs" />
+    <Compile Include="Flyweight\LightCircle.cs" />
+    <Compile Include="Flyweight\ILightShape.cs" />
+    <Compile Include="Flyweight\LightRectangle.cs" />
+    <Compile Include="Flyweight\LightTriangle.cs" />
+    <Compile Include="Flyweight\FlyWeigthDemo.cs" />
+    <Compile Include="Flyweight\LightShape.cs" />
+    <Compile Include="Mediator\FlightTowerDemo.cs" />
+    <Compile Include="Mediator\AirCraft.cs" />
+    <Compile Include="ChainOfResponsibility\AttackBehavior.cs" />
+    <Compile Include="ChainOfResponsibility\CarefulBehavior.cs" />
+    <Compile Include="Mediator\Component.cs" />
+    <Compile Include="Composite\File.cs" />
+    <Compile Include="Composite\FileSystemDemo.cs" />
+    <Compile Include="Composite\Folder.cs" />
+    <Compile Include="Composite\IFileSystemObject.cs" />
+    <Compile Include="Composite\Iterator\FileSystemIteratorDemo.cs" />
+    <Compile Include="Composite\Iterator\FolderDepthIterator.cs" />
+    <Compile Include="Composite\Iterator\IFileSystemObjectIterator.cs" />
+    <Compile Include="ChainOfResponsibility\DefaultBehavior.cs" />
+    <Compile Include="ChainOfResponsibility\IBehavior.cs" />
+    <Compile Include="ChainOfResponsibility\LineBehavior.cs" />
+    <Compile Include="ChainOfResponsibility\UnitBehaviorDemo.cs" />
+    <Compile Include="Mediator\FlightTower.cs" />
+    <Compile Include="Mediator\ITower.cs" />
+    <Compile Include="Mediator\Plane.cs" />
+    <Compile Include="FactoryMethod\UIDemo.cs" />
+    <Compile Include="Flyweight\Texture.cs" />
+    <Compile Include="Flyweight\TextureFactory.cs" />
+    <Compile Include="Visitor\Circle.cs" />
+    <Compile Include="Momento\CommandChangeColor.cs" />
+    <Compile Include="Momento\CommandChangeFont.cs" />
+    <Compile Include="Momento\CommandChangeSize.cs" />
+    <Compile Include="Visitor\IShape.cs" />
+    <Compile Include="Visitor\ITextCommand.cs" />
+    <Compile Include="Visitor\IVisitor.cs" />
+    <Compile Include="Momento\HistorySnapshot.cs" />
+    <Compile Include="Momento\Snapshot.cs" />
+    <Compile Include="Visitor\MoveVisitor.cs" />
+    <Compile Include="Visitor\Rectangle.cs" />
+    <Compile Include="State\CancelledOrder.cs" />
+    <Compile Include="State\InvoicedOrder.cs" />
+    <Compile Include="State\NewOrder.cs" />
+    <Compile Include="State\Order.cs" />
+    <Compile Include="State\OrderClientDemo.cs" />
+    <Compile Include="State\OrderState.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="State\RegisteredOrder.cs" />
+    <Compile Include="State\ShippedOrder.cs" />
+    <Compile Include="Momento\Text.cs" />
+    <Compile Include="Momento\TextEditor.cs" />
+    <Compile Include="Momento\TextEditorDemo.cs" />
+    <Compile Include="Visitor\Triangle.cs" />
+    <Compile Include="Visitor\VisitShapeDemo.cs" />
+    <Compile Include="FactoryMethod\WinButton.cs" />
+    <Compile Include="FactoryMethod\WinDialog.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+    <None Include="Builder\CarBuilder.cd" />
+    <None Include="ChainOfResponsibility\UnitBehavior.cd" />
+    <None Include="Composite\FileSystem.cd" />
+    <None Include="Composite\Iterator\FileSystemIterator.cd" />
+    <None Include="FactoryMethod\UIFactory.cd" />
+    <None Include="Flyweight\FlyWeight.cd" />
+    <None Include="Visitor\VisitShapes.cd" />
+    <None Include="Momento\TextEditor.cd" />
+    <None Include="State\OrderStates.cd" />
+    <None Include="Mediator\FlightTower.cd" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="README.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
