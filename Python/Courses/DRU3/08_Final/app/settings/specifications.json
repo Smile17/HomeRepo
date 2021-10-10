@@ -1,0 +1,221 @@
+{
+    "description":{
+        "X": [
+           "CLIENTNUM", "Customer_Age", "Gender",
+           "Dependent_count", "Education_Level", "Marital_Status",
+           "Income_Category", "Card_Category", "Months_on_book",
+           "Total_Relationship_Count", "Months_Inactive_12_mon",
+           "Contacts_Count_12_mon", "Credit_Limit", "Total_Revolving_Bal",
+           "Avg_Open_To_Buy", "Total_Amt_Chng_Q4_Q1", "Total_Trans_Amt",
+           "Total_Trans_Ct", "Total_Ct_Chng_Q4_Q1", "Avg_Utilization_Ratio",
+          "Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1",
+           "Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2"
+         ],
+        "final_columns":[
+            "Customer_Age", "Gender", "Dependent_count", "Marital_Status",
+           "Months_on_book",
+           "Total_Relationship_Count", "Months_Inactive_12_mon",
+           "Contacts_Count_12_mon", "Credit_Limit", "Total_Revolving_Bal",
+           "Avg_Open_To_Buy", "Total_Amt_Chng_Q4_Q1", "Total_Trans_Amt",
+           "Total_Trans_Ct", "Total_Ct_Chng_Q4_Q1", "Avg_Utilization_Ratio"
+                ],
+        "y":"Attrition_Flag",
+        "metrics":"accuracy_score"
+    },
+    "operations":[
+        {
+            "operation_number":1,
+            "operation_name":"replace",
+            "params":{
+                "in_columns":[
+                    "IsAlone"
+                ],
+                "old_values":[
+                    0
+                ],
+                "new_values":[
+                    1
+                ],
+                "condition_columns":[
+                    "Dependent_count"
+                ],
+                "conditions":[
+                    "equal"
+                ],
+                "condition_values":[
+                    0
+                ],
+                "defaults":[
+                    0
+                ],
+                "inplaces":[
+                    "False"
+                ]
+            }
+        },
+        {
+            "operation_number":2,
+            "operation_name":"encode_labels",
+            "params":{
+                "in_columns":[
+                    "Gender",
+                    "Marital_Status"
+                ]
+            }
+        },
+        {
+            "operation_number":3,
+            "operation_name":"replace",
+            "params":{
+                "in_columns":[
+                    "Education_Level",
+                    "Education_Level",
+                    "Education_Level",
+                    "Education_Level",
+                    "Education_Level",
+                    "Education_Level",
+                    "Education_Level"
+                ],
+                "old_values":[
+                    "Uneducated",
+                    "High School",
+                    "College",
+                    "Graduate",
+                    "Post-Graduate",
+                    "Doctorate",
+                    "Unknown"
+                ],
+                "new_values":[
+                    0,
+                    1,
+                    2,
+                    3,
+                    4,
+                    5,
+                    "None"
+                ],
+                "inplaces":[
+                    "True",
+                    "True",
+                    "True",
+                    "True",
+                    "True",
+                    "True",
+                    "True"
+                ]
+            }
+        },
+        {
+            "operation_number":4,
+            "operation_name":"replace",
+            "params":{
+                "in_columns":[
+                    "Income_Category",
+                    "Income_Category",
+                    "Income_Category",
+                    "Income_Category",
+                    "Income_Category",
+                    "Income_Category"
+                ],
+                "old_values":[
+                    "Less than $40K",
+                    "$40K - $60K",
+                    "$60K - $80K",
+                    "$80K - $120K",
+                    "$120K +",
+                    "Unknown"
+                ],
+                "new_values":[
+                    2,
+                    5,
+                    7,
+                    10,
+                    14,
+                    "None"
+                ],
+                "inplaces":[
+                    "True",
+                    "True",
+                    "True",
+                    "True",
+                    "True",
+                    "True"
+                ]
+            }
+        },
+        {
+            "operation_number":5,
+            "operation_name":"replace",
+            "params":{
+                "in_columns":[
+                    "Card_Category",
+                    "Card_Category",
+                    "Card_Category",
+                    "Card_Category"
+                ],
+                "old_values":[
+                    "Blue",
+                    "Silver",
+                    "Gold",
+                    "Platinum"
+                ],
+                "new_values":[
+                    0,
+                    1,
+                    2,
+                    3
+                ],
+                "inplaces":[
+                    "True",
+                    "True",
+                    "True",
+                    "True"
+                ]
+            }
+        },
+        {
+            "operation_number":6,
+            "operation_name":"fill_nans",
+            "params":{
+                "in_columns":[
+                    "Education_Level",
+                    "Income_Category"
+                ],
+                "methods":[
+                    "mode",
+                    "mode"
+                ]
+            }
+        },
+        {
+            "operation_number":7,
+            "operation_name":"standardize",
+            "params":{
+                "in_columns":[
+                    "Customer_Age",
+                    "Total_Trans_Amt",
+                    "Total_Trans_Ct",
+                    "Months_on_book",
+                    "Credit_Limit",
+                    "Total_Revolving_Bal",
+                    "Avg_Open_To_Buy"
+                ]
+            }
+        },
+        {
+            "operation_number":8,
+            "operation_name":"drop_columns",
+            "params":{
+                "in_columns":[
+                    "Education_Level", "Card_Category", "IsAlone", "Income_Category",
+
+                    "CLIENTNUM",
+                     "Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_1",
+                    "Naive_Bayes_Classifier_Attrition_Flag_Card_Category_Contacts_Count_12_mon_Dependent_count_Education_Level_Months_Inactive_12_mon_2"
+
+                ]
+            }
+        }
+
+    ]
+}
