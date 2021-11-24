@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Shop</string>
+    <string name="shop_main_title">Shop</string>
+    <string name="white_child_shirt">White child shirt</string>
+    <string name="blue_man_shirt">Blue man shirt</string>
+    <string name="pink_woman_shirt">Pink woman shirt</string>
+    <string name="white_shirt_message">You ordered a white shirt.</string>
+    <string name="blue_shirt_message">You ordered a blue shirt.</string>
+    <string name="pink_shirt_message">You ordered a pink shirt.</string>
+    <string name="placeholder">-</string>
+    <string name="default_phone">+38066983545</string>
+    <string name="default_name">Tony Sample</string>
+    <string name="btnlabel_date">Date</string>
+</resources>

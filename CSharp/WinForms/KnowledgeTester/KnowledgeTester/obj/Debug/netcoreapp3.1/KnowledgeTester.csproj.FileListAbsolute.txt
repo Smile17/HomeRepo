@@ -1,0 +1,17 @@
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\bin\Debug\netcoreapp3.1\KnowledgeTester.exe
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\bin\Debug\netcoreapp3.1\KnowledgeTester.deps.json
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\bin\Debug\netcoreapp3.1\KnowledgeTester.runtimeconfig.json
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\bin\Debug\netcoreapp3.1\KnowledgeTester.runtimeconfig.dev.json
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\bin\Debug\netcoreapp3.1\KnowledgeTester.dll
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\bin\Debug\netcoreapp3.1\KnowledgeTester.pdb
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\obj\Debug\netcoreapp3.1\KnowledgeTester.csproj.AssemblyReference.cache
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\obj\Debug\netcoreapp3.1\KnowledgeTester.Tester.resources
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\obj\Debug\netcoreapp3.1\KnowledgeTester.csproj.GenerateResource.cache
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\obj\Debug\netcoreapp3.1\KnowledgeTester.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\obj\Debug\netcoreapp3.1\KnowledgeTester.AssemblyInfoInputs.cache
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\obj\Debug\netcoreapp3.1\KnowledgeTester.AssemblyInfo.cs
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\obj\Debug\netcoreapp3.1\KnowledgeTester.csproj.CoreCompileInputs.cache
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\obj\Debug\netcoreapp3.1\KnowledgeTester.dll
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\obj\Debug\netcoreapp3.1\KnowledgeTester.pdb
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\obj\Debug\netcoreapp3.1\KnowledgeTester.genruntimeconfig.cache
+C:\Users\kam\Documents\CSharp\KnowledgeTester\KnowledgeTester\obj\Debug\netcoreapp3.1\KnowledgeTester.Properties.Resources.resources

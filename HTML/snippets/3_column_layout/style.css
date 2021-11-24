@@ -1,0 +1,40 @@
+			header{
+				background-color: yellow;
+				width:100%;
+				height:50px;
+				text-align: center;
+			}
+			.container{
+width:80%;
+margin: 0 auto;
+			}
+sidebar{
+width: 15%;
+background-color: green;
+}
+			sidebar.left{
+				float:left;				
+			}
+
+			main{
+				float:left;
+				width:70%;
+				background-color: lightblue;
+			}
+
+			sidebar.right{
+				float:left;
+
+			}
+
+			footer{
+				clear:both;
+				height: 50px;
+				width: 100%;
+				text-align: center;
+				background-color: orange;
+			}
+
+			sidebar.left, main, sidebar.right{
+				min-height: 600px				
+			}

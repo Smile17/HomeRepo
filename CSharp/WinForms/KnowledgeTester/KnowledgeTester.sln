@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31605.320
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KnowledgeTester", "KnowledgeTester\KnowledgeTester.csproj", "{CEBDE488-9B5D-4DEC-BD56-35B0B47BF2A0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CEBDE488-9B5D-4DEC-BD56-35B0B47BF2A0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CEBDE488-9B5D-4DEC-BD56-35B0B47BF2A0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CEBDE488-9B5D-4DEC-BD56-35B0B47BF2A0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CEBDE488-9B5D-4DEC-BD56-35B0B47BF2A0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {C5FA5F0D-A32A-4169-82D9-0861750A37D6}
+	EndGlobalSection
+EndGlobal

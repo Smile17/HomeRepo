@@ -1,0 +1,14 @@
+C:\Users\kam\source\repos\FileInfo\FileInfo\bin\Debug\netcoreapp3.1\FileInfo.exe
+C:\Users\kam\source\repos\FileInfo\FileInfo\bin\Debug\netcoreapp3.1\FileInfo.deps.json
+C:\Users\kam\source\repos\FileInfo\FileInfo\bin\Debug\netcoreapp3.1\FileInfo.runtimeconfig.json
+C:\Users\kam\source\repos\FileInfo\FileInfo\bin\Debug\netcoreapp3.1\FileInfo.runtimeconfig.dev.json
+C:\Users\kam\source\repos\FileInfo\FileInfo\bin\Debug\netcoreapp3.1\FileInfo.dll
+C:\Users\kam\source\repos\FileInfo\FileInfo\bin\Debug\netcoreapp3.1\FileInfo.pdb
+C:\Users\kam\source\repos\FileInfo\FileInfo\obj\Debug\netcoreapp3.1\FileInfo.csproj.AssemblyReference.cache
+C:\Users\kam\source\repos\FileInfo\FileInfo\obj\Debug\netcoreapp3.1\FileInfo.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kam\source\repos\FileInfo\FileInfo\obj\Debug\netcoreapp3.1\FileInfo.AssemblyInfoInputs.cache
+C:\Users\kam\source\repos\FileInfo\FileInfo\obj\Debug\netcoreapp3.1\FileInfo.AssemblyInfo.cs
+C:\Users\kam\source\repos\FileInfo\FileInfo\obj\Debug\netcoreapp3.1\FileInfo.csproj.CoreCompileInputs.cache
+C:\Users\kam\source\repos\FileInfo\FileInfo\obj\Debug\netcoreapp3.1\FileInfo.dll
+C:\Users\kam\source\repos\FileInfo\FileInfo\obj\Debug\netcoreapp3.1\FileInfo.pdb
+C:\Users\kam\source\repos\FileInfo\FileInfo\obj\Debug\netcoreapp3.1\FileInfo.genruntimeconfig.cache
