@@ -3,7 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.31605.320
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageLabelling", "ImageLabelling\ImageLabelling.csproj", "{D5EB8EB5-E77C-4B83-80D4-760B5CC62F38}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ImageLabelling", "ImageLabelling\ImageLabelling.csproj", "{D5EB8EB5-E77C-4B83-80D4-760B5CC62F38}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageMapGame", "ImageMapGame\ImageMapGame.csproj", "{8DB06074-DE95-4E5A-8436-4672555B1E3D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ImageMapModel", "ImageMapModel\ImageMapModel.csproj", "{B48BCEBF-CD8B-4DAA-AFAA-E7C43D42A9B7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +19,14 @@ Global
 		{D5EB8EB5-E77C-4B83-80D4-760B5CC62F38}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D5EB8EB5-E77C-4B83-80D4-760B5CC62F38}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D5EB8EB5-E77C-4B83-80D4-760B5CC62F38}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8DB06074-DE95-4E5A-8436-4672555B1E3D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8DB06074-DE95-4E5A-8436-4672555B1E3D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8DB06074-DE95-4E5A-8436-4672555B1E3D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8DB06074-DE95-4E5A-8436-4672555B1E3D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B48BCEBF-CD8B-4DAA-AFAA-E7C43D42A9B7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B48BCEBF-CD8B-4DAA-AFAA-E7C43D42A9B7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B48BCEBF-CD8B-4DAA-AFAA-E7C43D42A9B7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B48BCEBF-CD8B-4DAA-AFAA-E7C43D42A9B7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

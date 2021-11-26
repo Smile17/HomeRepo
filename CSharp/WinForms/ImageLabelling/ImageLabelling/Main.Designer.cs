@@ -150,6 +150,7 @@ namespace ImageLabelling
             this.Controls.Add(this.label1);
             this.Name = "Main";
             this.Text = "Image Labelling";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             ((System.ComponentModel.ISupportInitialize)(this.pbMain)).EndInit();
             this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);

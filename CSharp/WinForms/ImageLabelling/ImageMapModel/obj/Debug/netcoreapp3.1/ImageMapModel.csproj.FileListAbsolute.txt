@@ -1,0 +1,10 @@
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageMapModel\bin\Debug\netcoreapp3.1\ImageMapModel.deps.json
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageMapModel\bin\Debug\netcoreapp3.1\ImageMapModel.dll
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageMapModel\bin\Debug\netcoreapp3.1\ImageMapModel.pdb
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageMapModel\obj\Debug\netcoreapp3.1\ImageMapModel.csproj.AssemblyReference.cache
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageMapModel\obj\Debug\netcoreapp3.1\ImageMapModel.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageMapModel\obj\Debug\netcoreapp3.1\ImageMapModel.AssemblyInfoInputs.cache
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageMapModel\obj\Debug\netcoreapp3.1\ImageMapModel.AssemblyInfo.cs
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageMapModel\obj\Debug\netcoreapp3.1\ImageMapModel.csproj.CoreCompileInputs.cache
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageMapModel\obj\Debug\netcoreapp3.1\ImageMapModel.dll
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageMapModel\obj\Debug\netcoreapp3.1\ImageMapModel.pdb

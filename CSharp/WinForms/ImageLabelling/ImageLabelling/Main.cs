@@ -1,4 +1,4 @@
-﻿using ImageLabelling.Model;
+﻿using ImageMapModel.Model;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -103,13 +103,7 @@ namespace ImageLabelling
             open.Filter = "Image Files(*.jpg; *.jpeg; *.gif; *.bmp)|*.jpg; *.jpeg; *.gif; *.bmp";
             if (open.ShowDialog() == DialogResult.OK)
             {
-                //ImageMap = null;
-                //pbMain.Image = null;
-                //pbMain.InitialImage = null;
-                //Bitmap = null;
                 rect.Width = rect.Height = 0;
-                //GC.Collect();
-                //GC.WaitForPendingFinalizers();
                 ImageMap = new ImageMap();
                 ImageMap.ImageUrl = open.FileName;
                 var original = new Bitmap(open.FileName);
@@ -117,6 +111,7 @@ namespace ImageLabelling
                 Bitmap = new Bitmap(original, new Size(width, MaxHeight));
                 pbMain.Refresh();
                 pbMain.Image = Bitmap;
+                Bitmap = (Bitmap)Bitmap.Clone();
                 pbMain.Refresh();
                 
             }

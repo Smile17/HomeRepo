@@ -15,3 +15,6 @@ C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\De
 C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.pdb
 C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.genruntimeconfig.cache
 C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.Main.resources
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\bin\Debug\netcoreapp3.1\ImageMapModel.dll
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\bin\Debug\netcoreapp3.1\ImageMapModel.pdb
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.csproj.CopyComplete
