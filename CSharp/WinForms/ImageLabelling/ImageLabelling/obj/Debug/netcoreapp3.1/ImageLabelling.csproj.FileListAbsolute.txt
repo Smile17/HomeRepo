@@ -1,0 +1,17 @@
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\bin\Debug\netcoreapp3.1\ImageLabelling.exe
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\bin\Debug\netcoreapp3.1\ImageLabelling.deps.json
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\bin\Debug\netcoreapp3.1\ImageLabelling.runtimeconfig.json
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\bin\Debug\netcoreapp3.1\ImageLabelling.runtimeconfig.dev.json
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\bin\Debug\netcoreapp3.1\ImageLabelling.dll
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\bin\Debug\netcoreapp3.1\ImageLabelling.pdb
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.csproj.AssemblyReference.cache
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.Properties.Resources.resources
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.csproj.GenerateResource.cache
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.AssemblyInfoInputs.cache
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.AssemblyInfo.cs
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.csproj.CoreCompileInputs.cache
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.dll
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.pdb
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.genruntimeconfig.cache
+C:\Users\kam\Documents\HomeRepoLocal\CSharp\ImageLabelling\ImageLabelling\obj\Debug\netcoreapp3.1\ImageLabelling.Main.resources
