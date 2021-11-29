@@ -11,11 +11,12 @@ using System.Text.Json;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace ImageMapGame
+namespace ImageMapsGame
 {
     public partial class Main : Form
     {
-        ImageMap ImageMap;
+        List<ImageMap> ImageMaps = new List<ImageMap>();
+        int CurrentIdx = 0;
         Pen Pen = new Pen(Color.Red, 1);
         public Main()
         {
@@ -27,26 +28,54 @@ namespace ImageMapGame
         {
             OpenFileDialog open = new OpenFileDialog();
             open.Filter = "(*.json)|*.json";
+            open.Multiselect = true;
             if (open.ShowDialog() == DialogResult.OK)
             {
-                var json = File.ReadAllText(open.FileName);
-                ImageMap = JsonSerializer.Deserialize<ImageMap>(json);
-                pbMain.Image = new Bitmap(ImageMap.ImageUrl);
-
-                Bitmap pbImageBitmap = (Bitmap)(pbMain.Image);
-                Graphics graphics = Graphics.FromImage((Image)pbImageBitmap);
-                foreach (var io in ImageMap.ImageObjects)
+                foreach (String file in open.FileNames)
                 {
-                    graphics.DrawRectangle(Pen, io.Rectangle);
+                    var json = File.ReadAllText(file);
+                    var image = JsonSerializer.Deserialize<ImageMap>(json);
+                    ImageMaps.Add(image);
                 }
-                pbMain.Refresh();
-                graphics.Dispose();
-
+                CurrentIdx = 0;
+                DrawImageMap(CurrentIdx);
             }
+        }
+        private void DrawImageMap(int idx)
+        {
+            var ImageMap = ImageMaps[idx];
+            pbMain.Image = new Bitmap(ImageMap.ImageUrl);
+
+            Bitmap pbImageBitmap = (Bitmap)(pbMain.Image);
+            Graphics graphics = Graphics.FromImage((Image)pbImageBitmap);
+            foreach (var io in ImageMap.ImageObjects)
+            {
+                graphics.DrawRectangle(Pen, io.Rectangle);
+            }
+            pbMain.Refresh();
+            graphics.Dispose();
+        }
+
+        private void pbRight_Click(object sender, EventArgs e)
+        {
+            CurrentIdx++;
+            if (CurrentIdx >= ImageMaps.Count)
+                CurrentIdx = 0;
+            DrawImageMap(CurrentIdx);
+
+        }
+
+        private void pbLeft_Click(object sender, EventArgs e)
+        {
+            CurrentIdx--;
+            if (CurrentIdx < 0)
+                CurrentIdx = ImageMaps.Count - 1;
+            DrawImageMap(CurrentIdx);
         }
 
         private void pbMain_MouseDown(object sender, MouseEventArgs e)
         {
+            var ImageMap = ImageMaps[CurrentIdx];
             foreach (var io in ImageMap.ImageObjects)
             {
                 //if (io.Rectangle.Contains(e.Location))
@@ -63,13 +92,6 @@ namespace ImageMapGame
                     break;
                 }
             }
-        }
-        private void playSound(string path)
-        {
-            System.Media.SoundPlayer player = new System.Media.SoundPlayer();
-            player.SoundLocation = path;
-            player.Load();
-            player.Play();
         }
         private void playSoundMP3(string path)
         {
