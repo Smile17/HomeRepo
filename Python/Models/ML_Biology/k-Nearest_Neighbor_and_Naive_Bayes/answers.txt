@@ -1,0 +1,62 @@
+Commands:
+py -m knn --traindir data/part1/train --testdir data/part1/test --outdir data/part1/result --mink 1 --maxk 3
+py -m nbayes_summarize_data --traindir data/part2/train --outdir data/part2/output
+
+1b To tune hyperparameter k in KNN models we might use different approaches. One of the most common is cross-validation, so we may split the data into train and test chunks randomly several times, build our model and estimate metrics and then calculate the average values. That way we will be sure that our models are trustworthy, I mean that their metrics are quite precise. Among these values, we need to choose the highest one and it will be an optimal k value.
+1c When we fit k-NN models we just save the data into the model, real calculations happen on the prediction step. So the time complexity is O(1) and space complexity is O(n), where n is the number of records in the training dataset. But while we predict values time complexity is O(n) since we spend our time calculating all distances between dataset records and records for which we make a prediction.
+1d If we have c classes (c > 2), we need to calculate all occurrences in each class in k best neighbors. So, we might do that with one loop, so time complexity will be the same O(n) and by saving the values we need O(c) space complexity. Then we calculate the most frequent class.
+1e k-NN can be used with different metrics such as Euclidian (the most popular), Manhattan, Minkowski, Cosine, Jaccard, and Hamming. The choice of metrics depends on data peculiarity. Some of them are not truly metrics, for example, Cosine distance that might be used in k-NN models related to text documents does not satisfy triangle inequality but still can be used.
+1f Yes, k-NN can be used for a regression problem, but it will have some limitations. First of all, it will not be as smooth as a regression model since it can use only existing values from the input dataset, we may use weighted results based on k nearest neighbors values. Also, the problem may happen if we try to predict the value that should be outside the training dataset. For example, if we have increasing time series and we try to predict its future values we will be bounded by the dataset maximum value.
+
+Ex2
+2a
+We printed some probabilities while calculating prediction for [ clump = 5, uniformity = 2, marginal = 3, mitoses = 1 ].
+P(Class=2)=0.6626506024096386
+P(Clump Thickness=5 | Class=2)=0.18160919540229886
+P(Clump Thickness=5)=0.1822289156626506
+P(Uniformity of Cell Size=2 | Class=2)=0.08101851851851852
+P(Uniformity of Cell Size=2)=0.06475903614457831
+P(Marginal adhesion=3 | Class=2)=0.06651376146788991
+P(Marginal adhesion=3)=0.0783132530120482
+P(Mitoses=1 | Class=2)=0.9699074074074074
+P(Mitoses=1)=0.8237951807228916
+P(Class=4)=0.3373493975903614
+P(Clump Thickness=5 | Class=4)=0.18834080717488788
+P(Clump Thickness=5)=0.1822289156626506
+P(Uniformity of Cell Size=2 | Class=4)=0.03686635944700461
+P(Uniformity of Cell Size=2)=0.06475903614457831
+P(Marginal adhesion=3 | Class=4)=0.1050228310502283
+P(Marginal adhesion=3)=0.0783132530120482
+P(Mitoses=1 | Class=4)=0.5739910313901345
+P(Mitoses=1)=0.8237951807228916
+Then to calculate the result probabilities we calculate them following the formula:
+P(Class = 2 | X) =  P(Class=2) * (P(Clump Thickness=5 | Class=2) * P(Uniformity of Cell Size=2 | Class=2) * P(Marginal adhesion=3 | Class=2) * P(Mitoses=1 | Class=2)) / (P(Clump Thickness=5) * P(Uniformity of Cell Size=2) * P(Marginal adhesion=3) * P(Mitoses=1))
+The similar approach is used for Class = 4.
+Probabilities: {2: 0.8261831539590972, 4: 0.18546897372431795}
+2b
+In our case, there is some missing values, so that we just skip them in calculating probabilities.
+2c
+I see different approach in that particular case. One way is a Laplace smoothing as desribed here, it helps to avoid zeros with replacing them this quite tiny values:
+https://towardsdatascience.com/laplace-smoothing-in-na%C3%AFve-bayes-algorithm-9c237a8bdece
+The other way, if it is applicable for data, we might treat the feature as continuous one and use approximated probability.
+
+Ex3
+3a
+P(Candy=vanilla | Bowl = 1) = 30/40 = 3/4
+P(Candy = chocolate | Bowl = 1) = 10/40 = 1/4
+P(Candy=vanilla | Bowl = 2) = 20/40 = 1/2
+P(Candy = chocolate | Bowl = 2) = 20/40 = 1/2
+P(Bowl = 1) = P(Bowl = 2) = 1/2
+P(Candy = vanilla) = P(Candy=vanilla | Bowl = 1) * P(Bowl = 1) + P(Candy=vanilla | Bowl = 2) * P(Bowl = 2) = 3/4 * 1/2 + 1/2 * 1/2 = 3/8 + 2/8 = 5/8
+P(Bowl = 1 | Candy = vanilla) = P(Candy=vanilla | Bowl = 1) * P(Bowl = 1) / P(Candy = vanilla) = (3/4) * (1/2) / (5/8) = 3/5 = 0.6
+3b
+Task 1
+P(N) = 1/N_max = 1/1000
+P(D | N) = 1/N
+P(D) = P(D | D) * P(D) + P(D | D + 1) * P(D + 1) + ... P(D | N_max) * P(N_max) = (1/N_max) * (1/D + 1/(D + 1) + ... + 1/N_max) = (1/N_max) * log(N_max / D) 
+The related code is presented in nbayes_theory.py, and all probabilities are depicted in plot.png, the result is that the most probable N=60 with probability p=0.005905417875729857. Or mathematically approximately P(N | D) = P(D | N) * P(N) / P(D) = (1/N) * (1/N_max) / ((1/N_max) * log(N_max / D)) = 1/(N * log(N_max / D)) for N>=D. Since N_max and D are constants, the biggest propabilities will be with the smallest possible N, so N=D=60 with probability 1/(D * log(N_max / D)) = 0.005924007670611363, that is almost the same as code calculation.
+
+Task 2
+Based on script calculation, the expectation is equal to 333.41989326370776 or 333.
+Mathematical approximation is:
+E(N|D) = sum(N * 1/(N * log(N_max / D))) = sum(1/log(N_max / D)) = (N_max - D + 1) / log(N_max / D) = 334.4694730827175, that is quite close.

@@ -1,0 +1,42 @@
+1b Although the accuracy of the LDA model is a bit less (0.771) in comparison with the LogisticRegression model and it might look like LogisticRegression is better, still, I would choose the LDA model, since for any model accuracy is not the only one parameter that sould be considered, recall and precision are also important, and for disease, detection models are really important TP, FP, TN, FN values, especially FN is a number of people which was predicted wrongly and the model says the negative answer, people are really whereas, in reality, they are not. And if we compare this value for both methods we see that LDA has less value than the LogisticRegression model, so LDA is better in that perspective.
+1c Different sources say that LDA is better than LogisticRegression when all requirements are met. So, LDA requires that all features are continuous (not categorical) and follow a Normal distribution. That makes LDA sensible to outliers and not applicable for categorical data, so in an unknown unpurified dataset, I would choose LogisticRegression as a more robust method.
+1d
+The coefficient for npreg is 0.3348. Calculating the exponential function results in 1.3977, which amounts to an increase in diabetes risk of 39.7654 percent per additional pregnancy.
+
+
+Exercise 2.b
+IG(sepal length < 5.5): 0.5511234895788772
+IG(sepal width < 3.0): 0.2486661749461121
+IG(petal length < 2.0): 0.9182958340544894
+IG(petal width < 1.0): 0.9182958340544894
+------------
+Exercise 2.c
+I would select (petal length < 2.0) or (petal width < 1.0) to be the first split, because they have the biggest information gain
+------------
+Exercise 2.d
+Original dataset
+Feature importances:  [0.01667014 0.01667014 0.38926487 0.57739485]
+Feature importances:  [0.01072211 0.03692821 0.06763852 0.88471116]
+Feature importances:  [0.00750626 0.         0.55834592 0.43414782]
+Feature importances:  [0.01251043 0.01251043 0.05712101 0.91785814]
+Feature importances:  [0.01669101 0.         0.04721995 0.93608905]
+Reduced dataset
+Feature importances:  [0. 0. 1. 0.]
+Feature importances:  [0. 0. 1. 0.]
+Feature importances:  [0. 0. 1. 0.]
+Feature importances:  [0. 0. 1. 0.]
+Feature importances:  [0. 0. 1. 0.]
+Accuracy score using cross-validation
+The mean accuracy is 0.95
+-------------------------------------
+
+Feature importances for _original_ data set
+For the original data, the two most important features are:
+- petal length; 
+- petal width;
+-------------------------------------------
+
+Feature importances for _reduced_ data set
+For the reduced data, the most important feature is petal length. This means that petal width feature is distinuasible one for class 2
+------------------------------------------
+

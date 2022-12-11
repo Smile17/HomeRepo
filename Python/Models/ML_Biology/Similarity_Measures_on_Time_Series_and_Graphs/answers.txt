@@ -1,0 +1,20 @@
+py -m compute_dtw --datadir data --outdir output
+py -m compute_sp_kernel --datadir data --outdir output
+
+1b Results are the following:
+Pair of classes	Manhattan	DTW, w = 0	DTW, w = 10	DTW, w = 25	DTW, w = inf
+abnormal:abnormal	67.77	0.48	3.40	6.61	25.37
+abnormal:normal	67.52	0.53	4.33	8.27	26.35
+normal:normal	45.65	0.37	2.64	6.55	21.87
+Based on the results, we may see that Manhattan distance does not work well since it does not distinguish abnormal beats from normal ones (distances abnormal:abnormal, abnormal:normal are almost the same). Meanwhile, DTW works much better, especially with w=10 (other values also show the same tendency), we can see that distance abnormal:normal is higher than other, which means that it can distinguish abnormal beats from normal ones.
+
+1c If we compare DTW values with different w values we can see that all of them managed to distinguish abnormal beats from normal ones. But for w = 10 and w = 25, the differences are more significant. But more significant we mean that proportions between abnormal:abnormal to abnormal:normal and normal:normal to abnormal:normal are higher for these cases. It is quite understandable since for w=0 we have too many constraints for DTW search, meanwhile, for w=inf we have too much freedom in searching, so the best case is somewhere between.
+
+1d DTW is not a metric, since it does not hold the triangular inequality. For example, x:=[0,1,1,2], y:=[0,1,2], z:=[0,2,2], then DTW(x,z)=2,DTW(x,y)=0,DTW(y,z)=1, but inequality DTW(x,z)=DTW(x,y)+DTW(y,z) is not true.
+
+1e When we do not have any constraints we need to calculate the full matrix m x n (or if w=inf), so the complexity will be O(m x n). When we have w-constrained warping, we need to calculate only cells inside the stripe, the width of the stripe is 2 * w and the length is sqrt(m^2+n^2), then time complexity will be O(2 * w * sqrt(m^2+n^2)). If w is a constant then we may say that O(2 * w * sqrt(m^2+n^2)) = O(sqrt(m^2+n^2)) = O(max(m, n)). Or if m = n, then time complexity is O(n).
+
+
+
+2c The time complexity of the Floyd-Warshall algorithm is O(|V|^3) since we have 3 nested loops in the range [0, |V|-1] (|V| is a number of vertexes). The Floyd-Warshall algorithm works with any graph including the directed weighted graph, even if edges have negative weights. But if we have a graph with only positive weights we may use Dijkstra's algorithm. The algorithm finds the shortest way from the selected vertex to all others with O(|E| + |V|log|V|), where |E| is a number of edges, and |V| is a number of vertexes. So if we run the algorithm for all vertexes, we may get the shortest path matrixes with O(|V||E| + |V|^2log|V|) time. So, if we have a sparse graph, the algorithm works with O(|V|^2log|V|) which is better than Floyd–Warshall with O(|V|^3). But if we have a dense adjacency matrix then |E| is similar to |V|^2 and Dijkstra's algorithm works with O(|V|^3 + |V|^2log|V|) = O(|V|^3) that asymptotically works the same as Floyd–Warshall but we still may say that it is worse because of |V|^2log|V|. In our specific case, we still may benefit from Dijkstra's algorithm since we work with molecules and their graph is usually quite sparse.  
+The time complexity of the SP algorithm is O(n^2*m^2) since we need to go through all edges from both adjacency matrices and find the number of correspondences. We may improve calculation if shortest path matrices have a bounded set of weight values. Let's say that the number of unique weights is k. That way we may calculate the occurrences of each value, multiply the respective numbers of occurrences in both matrices and sum up the results. The time complexity is O(k*max(n^2, m^2)). At first, the first algorithm was implemented (it is saved in shortest_path_kernel.py) but it works really slow (as expected), so then the second approach was implemented (in shortest_path_kernel_improved.py) and it works much much better in terms of speed.

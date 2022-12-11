@@ -1,0 +1,3 @@
+non-mutagenic:non-mutagenic	1432.32
+non-mutagenic:mutagenic	2706.78
+mutagenic:mutagenic	5309.54
