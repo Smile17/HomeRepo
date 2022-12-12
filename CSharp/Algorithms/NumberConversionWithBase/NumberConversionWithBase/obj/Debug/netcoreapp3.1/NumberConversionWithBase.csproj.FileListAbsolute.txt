@@ -1,0 +1,14 @@
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\bin\Debug\netcoreapp3.1\NumberConversionWithBase.exe
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\bin\Debug\netcoreapp3.1\NumberConversionWithBase.deps.json
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\bin\Debug\netcoreapp3.1\NumberConversionWithBase.runtimeconfig.json
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\bin\Debug\netcoreapp3.1\NumberConversionWithBase.runtimeconfig.dev.json
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\bin\Debug\netcoreapp3.1\NumberConversionWithBase.dll
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\bin\Debug\netcoreapp3.1\NumberConversionWithBase.pdb
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\obj\Debug\netcoreapp3.1\NumberConversionWithBase.csproj.AssemblyReference.cache
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\obj\Debug\netcoreapp3.1\NumberConversionWithBase.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\obj\Debug\netcoreapp3.1\NumberConversionWithBase.AssemblyInfoInputs.cache
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\obj\Debug\netcoreapp3.1\NumberConversionWithBase.AssemblyInfo.cs
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\obj\Debug\netcoreapp3.1\NumberConversionWithBase.csproj.CoreCompileInputs.cache
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\obj\Debug\netcoreapp3.1\NumberConversionWithBase.dll
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\obj\Debug\netcoreapp3.1\NumberConversionWithBase.pdb
+C:\Users\kam\Documents\Katya\sql\NumberConversionWithBase\NumberConversionWithBase\obj\Debug\netcoreapp3.1\NumberConversionWithBase.genruntimeconfig.cache

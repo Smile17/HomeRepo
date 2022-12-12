@@ -1,0 +1,34 @@
+is_transition_matrix_non_changed = function(branch_length, Q, eps) {
+  # branch_length: (double) the length of the branch along which evolution happens
+  # Q: (double) the transition rate matrix
+  
+  P1 <- expm(branch_length * Q)
+  P2 <- expm(2 * branch_length * Q)
+  diff <- abs(P2 - P1)
+  s <- sum(diff)
+  print(s)
+  
+  return (s < eps)
+}
+
+time_transition_matrix_non_changed = function(Q, eps) {
+  # Q: (double) the transition rate matrix
+  for (i in 1:1000)
+  {
+    branch_length <- i * 10
+    res <- is_transition_matrix_non_changed(branch_length, Q, eps)
+    if(res)
+    {
+      print(branch_length)
+      break
+    }
+  }
+}
+
+
+3. For the sake of answering the question, 2 methods were added, time_transition_matrix_non_changed and is_transition_matrix_non_changed.
+Using simulation with different branch values from 10 to 10000 with step = 10, it was found that branch_length = 600 is the minimum value for meeting the requirements with transition matrix P(t) = P(2t). So, the answer is t = 600
+
+
+4. Since we have the overall rate of change from nucleotide i, that is -q_ii, we might assume that the average time needed for change is equal 1/q_ii
+5. To generate next nucleotide we may use the correspoding row of Q matrix, q_i1, q_i2, q_i3, q_i4, then we may use 3 of 4 values except q_ii, normalize them and use them as probabilities to generate next nucleotide.
