@@ -89,6 +89,12 @@ namespace SystemOfLinearEquations
         }
         #endregion
 
+        // Destructor
+        ~Matrix()
+        {
+            Console.WriteLine("Matrix is deallocated");
+        }
+
         #region Dimensions & Index
         /// <summary>
         /// Rows
@@ -143,34 +149,6 @@ namespace SystemOfLinearEquations
         #endregion
 
         #region Operators
-        public static Matrix operator *(Matrix a, Matrix b)
-        {
-            if (a.M != b.N) return null;
-            Matrix c = new Matrix(a.N, b.M);
-            for (int i = 0; i < c.N; i++)
-            {
-                for (int j = 0; j < c.M; j++)
-                {
-                    c[i, j] = 0;
-                    for (int k = 0; k < a.M; k++) c[i, j] += a[i, k] * b[k, j];
-                }
-            }
-            return c;
-        }
-        public static Vector operator *(Matrix a, Vector b)
-        {
-            if (a.M != b.n) return null;
-            Vector c = new Vector(a.N);
-            for (int i = 0; i < c.n; i++)
-            {
-                c[i] = 0;
-                for (int k = 0; k < a.M; k++) c[i] += a[i, k] * b[k];
-
-            }
-
-            return c;
-        }
-
         public static Matrix operator +(Matrix a, Matrix b)
         {
             if (a.N != b.N) return null;
@@ -201,6 +179,21 @@ namespace SystemOfLinearEquations
             return c;
         }
 
+        public static Matrix operator *(Matrix a, Matrix b)
+        {
+            if (a.M != b.N) return null;
+            Matrix c = new Matrix(a.N, b.M);
+            for (int i = 0; i < c.N; i++)
+            {
+                for (int j = 0; j < c.M; j++)
+                {
+                    c[i, j] = 0;
+                    for (int k = 0; k < a.M; k++) c[i, j] += a[i, k] * b[k, j];
+                }
+            }
+            return c;
+        }
+
         public static Matrix operator *(double a, Matrix b)
         {
             Matrix c = new Matrix(b.N, b.M);
@@ -213,14 +206,96 @@ namespace SystemOfLinearEquations
             }
             return c;
         }
-        
+
+        public static Matrix operator /(Matrix a, Matrix b)
+        {
+            return a * b.GetTransposed();
+        }
+
+        // +=, -=, *=, /= are implictly overloaded by respective operators (+, -, *, /)
+
+        public static Matrix operator ++(Matrix a)
+        {
+            Matrix c = new Matrix(a.N, a.M);
+            for (int i = 0; i < c.N; i++)
+            {
+                for (int j = 0; j < c.M; j++)
+                {
+                    c[i, j] = a[i, j] + 1;
+                }
+            }
+            return c;
+        }
+
+        public static Matrix operator --(Matrix a)
+        {
+            Matrix c = new Matrix(a.N, a.M);
+            for (int i = 0; i < c.N; i++)
+            {
+                for (int j = 0; j < c.M; j++)
+                {
+                    c[i, j] = a[i, j] - 1;
+                }
+            }
+            return c;
+        }
+
+        public static Matrix operator >>(Matrix a, int x)
+        {
+            Matrix c = new Matrix(a.N, a.M);
+            for (int i = 0; i < c.N; i++)
+            {
+                for (int j = 0; j < c.M; j++)
+                {
+                    var d = Convert.ToInt32(Math.Floor(a[i, j]));
+                    c[i, j] = d >> x;
+                }
+            }
+            return c;
+        }
+
+        public static Matrix operator <<(Matrix a, int x)
+        {
+            Matrix c = new Matrix(a.N, a.M);
+            for (int i = 0; i < c.N; i++)
+            {
+                for (int j = 0; j < c.M; j++)
+                {
+                    var d = Convert.ToInt32(Math.Floor(a[i, j]));
+                    c[i, j] = d << x;
+                }
+            }
+            return c;
+        }
+
+        public static bool operator ==(Matrix a, Matrix b)
+        {
+            bool res = true;
+            Matrix c = new Matrix(a.N, a.M);
+            for (int i = 0; i < c.N; i++)
+            {
+                for (int j = 0; j < c.M; j++)
+                {
+                    res = res && (a[i, j] == b[i, j]);
+                    if (!res) break;
+                }
+                if (!res) break;
+            }
+            return res;
+        }
+        public static bool operator !=(Matrix a, Matrix b)
+        {
+            return !(a == b);
+        }
+
+        #endregion
+
         public Matrix GetTransposed()
         {
             Matrix a = new Matrix(M, N);
             for (int i = 0; i < N; i++) for (int j = 0; j < M; j++) a[j, i] = this[i, j];
             return a;
         }
-        # endregion
 
         public override string ToString()
         {
