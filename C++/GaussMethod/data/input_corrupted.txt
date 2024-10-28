@@ -1,7 +1,0 @@
-K 1 O sad1sdf H 1
-H 2 S 1 O 4
-
-K 2 S 1 O 4
-H 2 O 1
-
-

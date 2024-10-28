@@ -1,6 +1,0 @@
-<?xml version="1.0"?>
-<Person xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
-  <Name>Name1</Name>
-  <Surname>Surname1</Surname>
-  <Year>1993</Year>
-</Person>
